@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+li, a {
+    font-family: Roboto, 'sans-serif';
+    color:rgb(208, 218, 241);
+    font-size:20px;
+    text-decoration: none;
+}
+
+
+
+/* navbar */
+header {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding: 30px 10%;
+    background: linear-gradient(170deg, rgba(23, 9, 76, 0.842) 0%, rgb(10, 4, 45) 60%, rgba(162, 27, 27, 0) 100%);
+    
+}
+
+.logo {
+    cursor:pointer;
+    text-decoration: none;
+    padding:10px;
+}
+
+.nav_links, .logo {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    
+}
+
+.nav_links li a:hover {
+    color:rgba(181, 203, 252, 0.751);
+    transition: all 0.3s ease 0s;
+    text-decoration: underline;
+}
+
+.nav_links li a:visited a:active {
+    color:rgb(208, 218, 241);
+    transition: all 0.3s ease 0s;
+}
+
+
+
+/* main */
+body {
+    background-color: rgb(11, 1, 31);
+
+}
+.main{
+    padding:30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(212, 235, 255);
+}
+
+.txtc {
+    margin: 15px 10%;
+    padding: 30px;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.main a{
+    color: rgb(163, 204, 255);
+}
+
+/* second */
+
+.second{
+    background-color: rgb(16, 4, 59);
+    padding:30px;
+}
+
+.second ul li{
+    margin: 5px 15%;
+    padding: 10px;
+    list-style:lower-greek;
+}
+
+/* third */
+
+.third{
+    background-color: rgb(11, 1, 31);
+    padding:30px;
+}
+
+.third ul li{
+    margin: 5px 15%;
+    padding: 10px;
+}
