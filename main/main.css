@@ -17,6 +17,9 @@ li, a {
 
 
 /* navbar */
+
+
+
 header {
     display:flex;
     flex-wrap: wrap;
@@ -26,6 +29,7 @@ header {
     background: linear-gradient(170deg, rgba(23, 9, 76, 0.842) 0%, rgb(10, 4, 45) 60%, rgba(162, 27, 27, 0) 100%);
     
 }
+
 
 .logo {
     cursor:pointer;
@@ -38,7 +42,8 @@ header {
 }
 
 .nav_links li {
-    display: inline-block;
+    float: right;
+    display: block;
     padding: 0 20px;
 }
 
@@ -48,6 +53,7 @@ header {
 }
 
 .nav_links li a:hover {
+
     color:rgba(181, 203, 252, 0.751);
     transition: all 0.3s ease 0s;
     text-decoration: underline;
@@ -63,11 +69,13 @@ header {
 /* main */
 body {
     background-color: rgb(11, 1, 31);
-
+    
 }
 .main{
-    padding:30px;
+    padding:100px;
+   
 }
+
 
 h1 {
     text-align: center;
@@ -76,12 +84,19 @@ h1 {
     color: rgb(212, 235, 255);
 }
 
+.redacted {
+    font-family: 'Consolas';
+    color: rgb(255, 0, 0);
+    background-color: rgb(50, 40, 40);
+}
+
 .txtc {
     margin: 15px 10%;
-    padding: 30px;
+    padding: 0;
     color: aliceblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
+
 }
 
 .main a{
@@ -90,25 +105,78 @@ h1 {
 
 /* second */
 
-.second{
-    background-color: rgb(16, 4, 59);
-    padding:30px;
+.portf{
+    background: linear-gradient(265deg, rgba(23, 9, 76, 0.842) 0%, rgba(14, 4, 49, 0.842) 50%, rgba(23, 9, 76, 0.842) 100%);
+    padding:100px;
 }
 
-.second ul li{
+.portf ul li{
     margin: 5px 15%;
     padding: 10px;
-    list-style:lower-greek;
 }
 
 /* third */
 
-.third{
+.todo{
     background-color: rgb(11, 1, 31);
-    padding:30px;
+    padding:100px;
+    
 }
 
-.third ul li{
+.todolist{
+    margin: 0 0px;
+
+}
+
+.todolist ul {
+    column-count: 2;
+    column-gap: 0;
+    width:100%;
+    margin:0;
+}
+/*urdl*/
+
+
+.todo ul li{
+    width: 70%;
+    margin: 5px 30%;
+    padding: 20px;
+    
+}
+
+/* links */
+
+.links{
+    background-color: rgb(16, 4, 59);
+    padding:100px;
+}
+
+.links ul {
     margin: 5px 15%;
+    list-style: none;
+    padding:40px;
+    
+}
+
+.links ul li{
+    margin: 3% 0%;
     padding: 10px;
+    text-align: center;
+    
+}
+
+.links a{
+    color:rgb(214, 156, 226);
+    font-size: 30px;
+}
+
+.ongoing {
+    color:rgb(255, 255, 131);
+}
+
+
+@media (max-width: 600px) {
+    header {
+      justify-content: center;
+    }
 }
