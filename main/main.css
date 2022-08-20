@@ -49,7 +49,7 @@ header {
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
-    
+    text-shadow: 0 0 4px rgb(255, 255, 255);
 }
 
 .nav_links li a:hover {
@@ -82,12 +82,14 @@ h1 {
     font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(212, 235, 255);
+    text-shadow: 0 0 7px #fff;
 }
 
 .redacted {
     font-family: 'Consolas';
     color: rgb(255, 0, 0);
     background-color: rgb(50, 40, 40);
+    text-shadow: 0 0 5px rgb(255, 0, 0);
 }
 
 .txtc {
@@ -97,6 +99,10 @@ h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
 
+}
+
+.dvdr {
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
 }
 
 .main a{
@@ -147,8 +153,10 @@ h1 {
 /* links */
 
 .links{
-    background-color: rgb(16, 4, 59);
+    background: linear-gradient( rgba(23, 9, 76, 0.842) 50%, rgb(11, 1, 31) 100%);
+   
     padding:100px;
+    height: 1000px;;
 }
 
 .links ul {
@@ -178,5 +186,8 @@ h1 {
 @media (max-width: 600px) {
     header {
       justify-content: center;
+    }
+    .click{
+        width:0px;
     }
 }
