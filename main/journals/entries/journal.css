@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+li, a {
+    font-family: Roboto, 'sans-serif';
+    color:rgb(208, 218, 241);
+    text-decoration: none;
+}
+
+
+
+/* navbar */
+
+
+
+header {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 5%;
+
+    background: linear-gradient(40deg, #A64B2A 10%, #823519, #A64B2A);
+    border-bottom: 5px solid #642502;
+}
+
+.logo {
+    cursor:pointer;
+    text-decoration: none;
+    padding: 10px;
+    font-size:30px;
+    text-shadow: 0 0 2px rgba(233, 233, 233, 0.5);
+}
+
+.nav_links, .logo {
+    list-style: none;
+}
+
+.nav_links li {
+    float: right;
+    display: block;
+    padding: 10px;
+}
+
+.nav_links li a {
+    text-shadow: 0 0 4px rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.nav_links li a:hover {
+    color:rgba(181, 203, 252, 0.751);
+    text-decoration: underline;
+}
+
+.nav_links li a:visited a:active {
+    color:rgb(208, 218, 241);
+}
+
+@media only screen and (max-width:580px)  {
+    .logo {
+        font-size: 6vw;
+    }
+    
+    .nav_links li a {
+        font-size: 3vw;
+    }
+
+    header {
+        justify-content: center;
+        margin-top:-20px;
+        padding: 30px 10% 10px 10%;
+
+    }
+    .click{
+        width:0px;
+    }
+}
+
+/*intro*/
+
+.intro {
+    background: linear-gradient(90deg, #c9893a, #cd852d 40% 60%, #c9893a);;
+    margin:30px 50px 50px 50px;
+}
+
+.introfield{
+    background: linear-gradient(90deg, #e6b880, #d39951 40% 60%, #e6b880);
+    padding:30px 50px 50px 50px;
+}
+
+.txti {
+    text-align:center;
+    font-size:30px;
+    font-family: Roboto, 'sans-serif';
+    color:#8E3200;
+    text-decoration: none;
+    margin: 30px 10%;
+}
+
+.txtc {
+
+    font-size:20px;
+    font-family: Roboto, 'sans-serif';
+    color:#8E3200;
+    text-decoration: none;
+    margin: 30px 10%;
+}
+
+.introtxt {
+    border: solid 5px #8E3200;
+}
+
+/*body*/
+
+.body{
+    margin-top:-100px;
+    background: linear-gradient(90deg, #e6b880, #d39951 40% 60%, #e6b880);
+    padding: 30px 50px 30px 50px;
+}
+.body a{
+    text-decoration: underline;
+}
+
+/* scrollbar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #D7A86E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cc924b;
+    border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background:  #996e39;
+}

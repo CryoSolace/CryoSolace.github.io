@@ -26,9 +26,9 @@ header {
     justify-content:space-between;
     align-items:center;
     padding: 20px 5%;
-    margin-top:px;
-    background-color:#A64B2A;
-    border-bottom: 5px solid #8E3200;
+
+    background: linear-gradient(40deg, #A64B2A 10%, #823519, #A64B2A);
+    border-bottom: 5px solid #642502;
 }
 
 .logo {
@@ -75,7 +75,7 @@ header {
     header {
         justify-content: center;
         margin-top:-20px;
-        padding: 20px 10%;
+        padding: 30px 10% 10px 10%;
 
     }
     .click{
@@ -86,7 +86,7 @@ header {
 /*landing*/
 
 .landing{
-    background-color:#e6b880;
+    background: linear-gradient(90deg, #e6b880, #d39951 40% 60%, #e6b880);
 
     padding:30px 50px 50px 50px;
 }
@@ -102,8 +102,7 @@ header {
 /*entries*/
 
 .entries{
-    background-color:#D7A86E;
-
+    background: linear-gradient(90deg, #e6b880, #d39951 40% 60%, #e6b880);
 }
 
 
