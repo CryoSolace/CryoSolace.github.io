@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-* {
+*,::after,::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,15 +27,16 @@ header {
     justify-content:space-between;
     align-items:center;
     padding: 30px 10%;
+    margin-top:-5px;
     background: linear-gradient(170deg, rgba(23, 9, 76, 0.842) 0%, rgb(10, 4, 45) 60%, rgba(162, 27, 27, 0) 100%);
-    
+    transition: all 0.3s ease 0s;
 }
 
 
 .logo {
     cursor:pointer;
     text-decoration: none;
-    padding:10px;
+    padding: 10px;
 }
 
 .nav_links, .logo {
@@ -65,6 +66,34 @@ header {
     transition: all 0.3s ease 0s;
 }
 
+@media only screen and (max-width:690px)  {
+    .logo {
+        font-size: 6vw;
+    }
+    
+    .nav_links li {
+        float: right;
+        display: block;
+        padding: 0 10px;
+    }
+    
+
+    .nav_links li a {
+        font-size: 3vw;
+        transition: all 0.3s ease 0s;
+    }
+
+    header {
+        justify-content: center;
+        transition: 0.2s ease-in-out;
+        margin-top:-20px;
+        padding: 10px 16%;
+
+    }
+    .click{
+        width:0px;
+    }
+}
 
 
 /* main */
@@ -73,7 +102,7 @@ body {
     
 }
 .main{
-    padding:100px;
+    padding:100px 100px;
 
 }
 
@@ -111,11 +140,17 @@ h1 {
 }
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:690px) {
     .txtc , .redacted, .mainlinks {
         font-size: 15px;
         transition: 0.2s ease-in-out;
+        margin: 15px 0
     }
+    .main{
+        padding:100px 50px;
+    
+    }
+    
 }
 
 /* second */
@@ -134,6 +169,13 @@ h1 {
     color: rgb(163, 204, 255);
 }
 
+@media only screen and (max-width:690px) {
+    .portf{
+        padding:100px 50px;
+    
+    }
+    
+}
 
 /* third */
 
@@ -145,7 +187,7 @@ h1 {
 
 .todolist{
     margin: 0 0px;
-
+    transition: 0.6s ease-in-out;
 }
 
 .todolist ul {
@@ -154,9 +196,21 @@ h1 {
     width:100%;
     margin:0;
     transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 
-@media only screen and (max-width: 600px){
+.todo ul li{
+    width: 70%;
+    margin: 5px 30%;
+    padding: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+@media only screen and (max-width: 690px){
+    .todo{
+        background-color: rgb(11, 1, 31);
+        padding:100px 50px;
+    }
     .todolist ul {
         column-count: 1;
         column-gap: 0;
@@ -164,16 +218,20 @@ h1 {
         margin:0;
         transition: 0.6s ease-in-out;
     }
+    .todolist ul li {
+        font-size:3vw;
+        transition: 0.6s ease-in-out;
+    }
+    .todo ul li {
+        padding: 10px;
+        margin: 5px 5%;
+        transition: 0.6s ease-in-out;
+    }
 }
 /*urdl*/
 
 
-.todo ul li{
-    width: 70%;
-    margin: 5px 30%;
-    padding: 20px;
-    
-}
+
 
 /* links */
 
@@ -212,11 +270,24 @@ h1 {
 }
 
 
-@media (max-width: 600px) {
-    header {
-      justify-content: center;
-    }
-    .click{
-        width:0px;
-    }
+
+
+/* scrollbar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(3, 2, 10);
+}s
+
+::-webkit-scrollbar-thumb {
+    background: rgb(43, 42, 71);
+    border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(31, 31, 54);
 }
