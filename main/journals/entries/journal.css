@@ -109,6 +109,7 @@ header {
     font-size:20px;
     font-family: Roboto, 'sans-serif';
     color:#8E3200;
+    text-align:justify;
     text-decoration: none;
     margin: 30px 10%;
 }
