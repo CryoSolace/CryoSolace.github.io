@@ -1,12 +1,12 @@
 body {
-    background-color: #b3caf1;
+    background-color: black;
 }
 
 h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align:center;
-    border: 5px solid dodgerblue;
-    background-color: rgb(129, 190, 248);
+    border: 5px solid rgb(24, 24, 24);
+    background-color: gray;
     padding: 30px;
     margin-top:-20px;
     margin-left: -20px;
@@ -18,7 +18,7 @@ h2 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
     border: 5px solid dodgerblue;
-    background-color: rgb(129, 190, 248);
+    background-color: black;
     padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -30,8 +30,8 @@ h2 {
 .textbox {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
-    border: 5px solid dodgerblue;
-    background-color: rgb(185, 221, 255);
+    border: 5px solid rgb(24, 24, 24);
+    background-color: gray;
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
