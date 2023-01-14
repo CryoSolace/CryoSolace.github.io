@@ -45,7 +45,7 @@ newItem.setAttribute("class","drawer");
 // change  the inner text of the first element (p) in new item, which is a drawer
 newItem.children[0].innerText = "X-men.";
 
-newItem.remove(); // removes element
+// newItem.remove(); // removes element
 
 // 4 DOM NAVIGATION 
 
