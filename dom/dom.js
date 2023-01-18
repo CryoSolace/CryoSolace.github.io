@@ -54,3 +54,5 @@ console.log(list);
 console.log(list.children[0].style.backgroundColor = "green"); //30:33 in video at top
 console.log(list.children[list.children.length-2].nextElementSibling.style.backgroundColor = "red");
 
+
+
