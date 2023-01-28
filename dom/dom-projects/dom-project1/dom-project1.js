@@ -3,7 +3,7 @@ function generate() { // need to figure out how fetch apis work... good progress
     .then((data) => data.json())
     .then((item) => {
         document.querySelector(".quote").innerText = item.content;
-        document.querySelector(".author").innerText = item.author;
+        document.querySelector(".author").innerText = "- " + item.author;
     });
 };
 
